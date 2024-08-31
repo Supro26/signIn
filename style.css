@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #1a738a;
+    background-color: rgb(1, 9, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background-color: rgb(1, 9, 14);
+    position: absolute;
+    top:22%;
+    height: 400px;
+    width: 630px;
+    border-radius: 6px;
+    display: flex;
+    transition: 0.4s;
+}
+.main:hover{
+    box-shadow: 0 0 35px rgb(3, 75, 94);
+}
+.left{
+    width: 58%;
+}
+.sign{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 32px;
+}
+.enter{
+    margin: 8px;
+    position: relative;
+    top: 16%;
+    height: 129px;
+    padding: 29px 30px 0px 30px;
+    opacity: 1;
+}
+.right{
+    width: 44%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(208, 211, 218);
+  background: linear-gradient(to right,#1a738a,#023047);
+  border-top-right-radius: 6px ;
+  border-bottom-right-radius: 6px ;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  transition: 0.8s;
+}
+p{
+    position: relative;
+    top: 4%;
+    font-size: 0.8rem;
+    left: 6px;
+}
+.enter input{
+    width: 100%;
+    height: 35px;
+    border:1px solid #023047;
+    background: rgb(1, 9, 14);
+    border-radius: 5px;
+    outline: none;
+    color: #1a738a;
+    font-size: 0.8rem;
+    opacity: 1;
+}
+.emaildiv{
+    height: 65px;
+}
+.emaildiv span{
+    position: absolute;
+    left: 39px;
+    top: 33px;
+    pointer-events: none;
+    color: #023047;
+    transition: 0.5s;
+}
+.emaildiv input:focus ~span{
+    color: #1a738a;
+    transform: translateX(10px) translateY(-14px);
+    background: rgb(1, 9, 14);
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border-left: 1px solid #1a738a;
+    border-right: 1px solid #1a738a; 
+    letter-spacing: 0.2rem;
+}
+.emaildiv input:focus{
+    border: 1px solid #1a738a;
+}
+.maili{
+    color: #023047;
+    position: relative;
+    left: 92%;
+    bottom: 45%;
+    width: 16px;
+}
+.emaildiv input:focus ~.maili{
+    color: #1a738a;
+}
+.locki{
+    color: #023047;
+    position: absolute;
+    left: 85%;
+    bottom: 21%;
+    width: 16px;
+}
+.passdiv input:focus ~.locki{
+    color: #1a738a;
+}
+.passdiv span{
+    position: absolute;
+    left: 39px;
+    top: 99px;
+    pointer-events: none;
+    color: #023047;
+    transition: 0.5s;
+}
+.passdiv input:focus ~span{
+    color: #1a738a;
+    transform: translateX(10px) translateY(-14px);
+    background: rgb(1, 9, 14);
+    font-size: 0.7rem;
+    padding: 0 10px;
+    border-left: 1px solid #1a738a;
+    border-right: 1px solid #1a738a; 
+    letter-spacing: 0.2rem;
+}
+.passdiv input:focus{
+    border: 1px solid #1a738a;
+}
+.buttsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -75px;
+    height: 48px;
+    width: 100%;
+}
+.butt{
+    font-family: "Poppins", sans-serif;
+    height: 46px;
+    width: 111px;
+    background-color: rgb(1, 9, 14);
+    color: #023047;
+    font-size: 1.2rem;
+    border: 1px solid #023047;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.buttsec section{
+    position: absolute;
+    top: -2px;
+    right: 207px;
+    height: 8px;
+    width: 15px;
+    background-color: #023047;
+    transition: 0.5s ease-in-out;
+}
+.buttsec footer{
+    position: absolute;
+    top: 42px;
+    right: 134px;
+    height: 8px;
+    width: 15px;
+    background-color: #023047;
+    transition: 0.5s ease-in-out;
+}
+.butt:hover{
+    background-color: #0191aa;
+    color: rgb(1, 9, 14);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #0191aa;
+}
+.butt:hover ~section{
+    background: rgb(1, 9, 14);
+    border: 1px solid #0191aa;
+    transform: translateX(70px);
+}
+.butt:hover ~footer{
+    background: rgb(1, 9, 14);
+    border: 1px solid #0191aa;
+    transform: translateX(-70px);
+}
+.create{
+    position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -88px;
+  font-size: 0.8rem;
+  color:#023047 ;
+}
